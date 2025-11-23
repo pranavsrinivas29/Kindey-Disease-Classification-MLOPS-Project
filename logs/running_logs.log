@@ -42,3 +42,277 @@ x==========x]
 [2025-11-23 23:06:43,317: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2025-11-23 23:19:55,962: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:19:55,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:19:55,969: INFO: common: created directory at: artifacts]
+[2025-11-23 23:19:55,970: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:19:56,512: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-23 23:23:59,600: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:23:59,619: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:23:59,642: INFO: common: created directory at: artifacts]
+[2025-11-23 23:23:59,674: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:23:59,956: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-23 23:25:44,985: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:25:44,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:25:44,995: INFO: common: created directory at: artifacts]
+[2025-11-23 23:25:44,996: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:28:45,676: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:28:45,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:28:45,684: INFO: common: created directory at: artifacts]
+[2025-11-23 23:28:45,685: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:29:06,342: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-23 23:46:50,835: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-23 23:46:50,836: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:46:50,839: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:46:50,839: INFO: common: created directory at: artifacts]
+[2025-11-23 23:46:50,839: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-23 23:46:50,839: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-23 23:47:00,244: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-23 23:47:00,552: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-23 23:47:00,552: INFO: main: *******************]
+[2025-11-23 23:47:00,552: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-23 23:47:00,553: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:47:00,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:47:00,554: INFO: common: created directory at: artifacts]
+[2025-11-23 23:47:00,554: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-23 23:47:01,063: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-23 23:47:01,166: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-23 23:47:01,231: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-23 23:47:01,231: INFO: main: *******************]
+[2025-11-23 23:47:01,231: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-11-23 23:47:01,232: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:47:01,234: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:47:01,234: INFO: common: created directory at: artifacts]
+[2025-11-23 23:47:01,234: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:47:05,624: ERROR: main: {{function_node __wrapped__IteratorGetNext_output_types_2_device_/job:localhost/replica:0/task:0/device:CPU:0}} ValueError: Could not find callback with key=pyfunc_10 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 258, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_10 in the registry.
+
+
+	 [[{{node EagerPyFunc}}]] [Op:IteratorGetNext] name: ]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/main.py", line 34, in <module>
+    model_trainer.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 86, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/backend/tensorflow/trainer.py", line 133, in multi_step_on_iterator
+    one_step_on_data(iterator.get_next())
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__IteratorGetNext_output_types_2_device_/job:localhost/replica:0/task:0/device:CPU:0}} ValueError: Could not find callback with key=pyfunc_10 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 258, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_10 in the registry.
+
+
+	 [[{{node EagerPyFunc}}]] [Op:IteratorGetNext] name: 
+[2025-11-23 23:51:32,591: INFO: stage_03_model_training: *******************]
+[2025-11-23 23:51:32,591: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-23 23:51:32,592: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:51:32,595: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:51:32,595: INFO: common: created directory at: artifacts]
+[2025-11-23 23:51:32,595: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:51:40,959: ERROR: stage_03_model_training: {{function_node __wrapped__IteratorGetNext_output_types_2_device_/job:localhost/replica:0/task:0/device:CPU:0}} ValueError: Could not find callback with key=pyfunc_10 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 258, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_10 in the registry.
+
+
+	 [[{{node EagerPyFunc}}]] [Op:IteratorGetNext] name: ]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 87, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/backend/tensorflow/trainer.py", line 133, in multi_step_on_iterator
+    one_step_on_data(iterator.get_next())
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__IteratorGetNext_output_types_2_device_/job:localhost/replica:0/task:0/device:CPU:0}} ValueError: Could not find callback with key=pyfunc_10 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 258, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_10 in the registry.
+
+
+	 [[{{node EagerPyFunc}}]] [Op:IteratorGetNext] name: 
+[2025-11-23 23:55:03,851: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:55:03,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:55:03,862: INFO: common: created directory at: artifacts]
+[2025-11-23 23:55:03,864: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:55:29,504: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-23 23:55:51,534: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:55:51,536: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:55:51,537: INFO: common: created directory at: artifacts]
+[2025-11-23 23:55:51,538: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:57:14,650: INFO: stage_03_model_training: *******************]
+[2025-11-23 23:57:14,651: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-23 23:57:14,653: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:57:14,656: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:57:14,657: INFO: common: created directory at: artifacts]
+[2025-11-23 23:57:14,657: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:57:15,089: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-23 23:57:15,475: ERROR: stage_03_model_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/backend/tensorflow/core.py", line 171, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-11-23 23:59:03,192: INFO: stage_03_model_training: *******************]
+[2025-11-23 23:59:03,192: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-23 23:59:03,193: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-23 23:59:03,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-23 23:59:03,196: INFO: common: created directory at: artifacts]
+[2025-11-23 23:59:03,196: INFO: common: created directory at: artifacts/training]
+[2025-11-23 23:59:03,652: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-23 23:59:04,108: ERROR: stage_03_model_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 77, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/backend/tensorflow/core.py", line 171, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-11-24 00:00:29,168: INFO: stage_03_model_training: *******************]
+[2025-11-24 00:00:29,169: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-24 00:00:29,170: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:00:29,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:00:29,172: INFO: common: created directory at: artifacts]
+[2025-11-24 00:00:29,172: INFO: common: created directory at: artifacts/training]
+[2025-11-24 00:00:29,612: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-24 00:00:30,006: ERROR: stage_03_model_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 82, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/backend/tensorflow/core.py", line 171, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-11-24 00:01:01,478: INFO: stage_03_model_training: *******************]
+[2025-11-24 00:01:01,478: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-24 00:01:01,480: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:01:01,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:01:01,483: INFO: common: created directory at: artifacts]
+[2025-11-24 00:01:01,483: INFO: common: created directory at: artifacts/training]
+[2025-11-24 00:01:01,914: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-24 00:01:03,196: ERROR: stage_03_model_training: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[-0.00553046 -0.00278001]
+ [ 0.00408464 -0.00760497]
+ [ 0.01422849  0.00557351]
+ ...
+ [ 0.01377504 -0.01367907]
+ [-0.00862894 -0.0073838 ]
+ [ 0.00059976  0.01113937]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 80, in train
+    self.model.fit(
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/miniconda3/envs/kidney/lib/python3.9/site-packages/keras/src/optimizers/base_optimizer.py", line 409, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[-0.00553046 -0.00278001]
+ [ 0.00408464 -0.00760497]
+ [ 0.01422849  0.00557351]
+ ...
+ [ 0.01377504 -0.01367907]
+ [-0.00862894 -0.0073838 ]
+ [ 0.00059976  0.01113937]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-11-24 00:05:10,379: INFO: stage_03_model_training: *******************]
+[2025-11-24 00:05:10,379: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-24 00:05:10,380: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:05:10,382: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:05:10,383: INFO: common: created directory at: artifacts]
+[2025-11-24 00:05:10,383: INFO: common: created directory at: artifacts/training]
+[2025-11-24 00:05:10,791: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-24 00:05:10,794: ERROR: stage_03_model_training: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 19, in main
+    training.get_base_model()
+  File "/Users/pranavsrinivasvenkatesh/Projects/Data Science Projects/Kindey DIsease Classification/src/cnnClassifier/components/model_training.py", line 23, in get_base_model
+    optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2025-11-24 00:07:34,720: INFO: stage_03_model_training: *******************]
+[2025-11-24 00:07:34,720: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-24 00:07:34,722: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:07:34,724: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:07:34,724: INFO: common: created directory at: artifacts]
+[2025-11-24 00:07:34,724: INFO: common: created directory at: artifacts/training]
+[2025-11-24 00:07:35,143: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-24 00:07:41,167: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-24 00:07:41,259: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-24 00:08:06,567: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-24 00:08:06,569: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:08:06,571: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:08:06,571: INFO: common: created directory at: artifacts]
+[2025-11-24 00:08:06,571: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-24 00:08:06,571: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-24 00:08:16,355: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-24 00:08:16,669: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-24 00:08:16,669: INFO: main: *******************]
+[2025-11-24 00:08:16,669: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-24 00:08:16,670: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:08:16,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:08:16,672: INFO: common: created directory at: artifacts]
+[2025-11-24 00:08:16,672: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-24 00:08:17,032: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-24 00:08:17,130: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-24 00:08:17,188: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-24 00:08:17,189: INFO: main: *******************]
+[2025-11-24 00:08:17,189: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-11-24 00:08:17,190: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-24 00:08:17,191: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-24 00:08:17,191: INFO: common: created directory at: artifacts]
+[2025-11-24 00:08:17,191: INFO: common: created directory at: artifacts/training]
+[2025-11-24 00:08:17,288: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-24 00:08:22,587: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-11-24 00:08:22,645: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
