@@ -47,11 +47,14 @@ Now,
 ```bash
 open up you local host and port
 ```
+## Data
+DOwnload the data from kaggle
+[CT Kidney Dataset](http://kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone?select=CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone)
 
-
-
-
-
+- For the sake of simplicity, delete the cyst and stone folder.
+- zip the remaining folders
+- upload to your google drive (uploading any s3 bucket is fine)
+- provide open privileges once uploaded 
 
 ## MLflow
 
