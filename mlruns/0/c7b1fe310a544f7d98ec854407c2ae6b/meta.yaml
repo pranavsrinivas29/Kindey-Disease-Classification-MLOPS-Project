@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/pranavsrinivasvenkatesh/Projects/Data%20Science%20Projects/Kindey%20DIsease%20Classification/mlruns/0/c7b1fe310a544f7d98ec854407c2ae6b/artifacts
+end_time: 1764002240412
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7b1fe310a544f7d98ec854407c2ae6b
+run_name: polite-dolphin-555
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764002236354
+status: 3
+tags: []
+user_id: pranavsrinivasvenkatesh
