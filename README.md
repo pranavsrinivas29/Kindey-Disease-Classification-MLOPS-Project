@@ -183,3 +183,15 @@ DVC
 
     ECR_REPOSITORY_NAME = simple-app
 
+# 8. References:
+##### CI/CD Pipeline run
+![CI/CD Pipeline](images/cicd.png)
+
+#### UI on AWS EC2 Instance
+![UI](images/app.png)
+
+#### MLflow 
+![MLflow](images/mlflow.png)
+
+#### DagsHub Integration
+![DagsHub](images/dagshub.png)
